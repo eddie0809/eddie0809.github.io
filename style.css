@@ -113,7 +113,8 @@ nav {
 }
 
 main {
-  max-width: 36rem;
+  text-align: justify;
+  max-width: 48rem;
   margin: 0 auto;
   padding: 2rem 1rem;
 }
