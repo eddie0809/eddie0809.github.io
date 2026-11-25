@@ -1,0 +1,125 @@
+@font-face {
+  font-family: "EB Garamond";
+  src: url("fonts/eb-garamond-latin-wght-normal.woff2") format("woff2");
+  font-style: normal;
+  font-weight: 400 800;
+}
+
+@font-face {
+  font-family: "EB Garamond";
+  src: url("fonts/eb-garamond-latin-wght-italic.woff2") format("woff2");
+  font-style: italic;
+  font-weight: 400 800;
+}
+
+@font-face{
+  font-family: "Inconsolata";
+  src: url("fonts/Inconsolata-Regular.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 400;
+}
+
+@font-face{
+  font-family: "Inconsolata";
+  src: url("fonts/Inconsolata-Bold.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 700;
+}
+
+body {
+  background-color: #f3ecd8;
+  color: #000000;
+  font-family: "EB Garamond", Garamond, Georgia, serif;
+  font-size: 1.2rem;
+  line-height: 1.5;
+  margin: 0 auto;
+}
+
+tt {
+  font-family: "Inconsolata", monospace;
+}
+
+nav {
+  background-color: #f0c93a;
+  padding: 1rem;
+}
+
+/* Main navigation list */
+.nav-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* Remove default link styling */
+.nav-list a {
+  text-decoration: none;
+}
+
+/* Dropdown container */
+.dropdown {
+  position: relative;
+}
+
+/* The clickable Projects heading */
+.dropdown summary {
+  color: #0033ff;
+  cursor: pointer;
+  list-style: none;
+}
+
+/* Remove the default browser triangle */
+.dropdown summary::-webkit-details-marker {
+  display: none;
+}
+
+/* Add our own dropdown indicator */
+.dropdown summary::after {
+  content: " ▾";
+}
+
+/* The dropdown menu itself */
+.dropdown-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+
+  background-color: #f0c93a;
+  min-width: 10rem;
+
+  list-style: none;
+  margin: 0;
+  padding: 0.5rem 0;
+  z-index: 10;
+}
+
+/* Individual dropdown links */
+.dropdown-menu a {
+  display: block;
+  padding: 0.3rem 1rem;
+}
+
+/* Keyboard focus indicator */
+.nav-list a:focus-visible,
+.dropdown summary:focus-visible {
+  outline: 2px solid #0033ff;
+  outline-offset: 4px;
+}
+
+main {
+  max-width: 36rem;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+}
+
+
+
+a {
+  color: #0033ff;
+}
